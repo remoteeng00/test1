@@ -1,0 +1,13 @@
+{
+    "version": "0.1",
+    "requires" : [],
+    "dumper" : {
+        "data_url" : ["ftp://test:test@ftp_server/speclist.txt"],
+        "uncompress" : false,
+        "schedule" : "0 12 * * *"
+    },
+    "uploader" : {
+        "parser" : "parser:load_data",
+        "on_duplicates" : "error"
+    }
+}
